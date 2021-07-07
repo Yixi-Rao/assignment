@@ -1,0 +1,180 @@
+body  {
+    background-image: url("../images/bg_pattern.jpg");
+    background-position: center; 
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  this is the return botton for all the pages which can return to the sitemap page or to the index page */
+.button_return {
+    width: 140px;
+    height: 70px;
+    position:absolute;
+    left: 47%;
+    transition-duration: 0.4s;
+    background: rgb(250, 250, 250);
+    font-size: 25px;
+    border-radius: 12px;
+    border: 5px solid rgba(0, 118, 253, 0.719)
+}
+
+.button_return:hover {
+    background-color: rgba(0, 118, 253, 0.719);
+    color: hsla(0, 0%, 100%, 0.89);
+}
+
+/* beautiful headings */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    margin: 20px 0;
+    padding: 15px 0 0;
+    background: url("../images/heading_1_bottom.png") no-repeat center top;
+    color: rgb(23, 100, 163);
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93px;
+    margin: 0 0 20px 0;
+    background: url("../images/heading_2.png") no-repeat center top;
+    color: #006fa1;
+    font-size: 1.2rem;
+    font-weight: bold;      
+}
+
+/* image map part */
+
+#image_map img {
+    float: left;
+    margin-right: 20px;
+}
+
+#clear {
+    clear: left;
+}
+
+.p_howToPlay {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p_howToPlay p {
+    font-size: 1.3em;
+}
+
+#p_imageMap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#p_imageMap p {
+    font-size: 1.3em;
+}
+
+.future_MHR {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* image garllery start */
+    #photo_gallery {
+        width: 90%;
+        
+        margin: 0 auto;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        
+    }
+
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+    flex: 25%;
+    max-width: 24%;
+    padding: 0 4px;
+    }
+
+    .column img {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+    margin-top: 8px;
+    /* vertical-align: middle; */
+    width: 100%;
+    border: 2px solid rgb(4, 197, 245);
+    border-radius: 4px;  /* Rounded border */
+    }
+
+    .column img:hover {
+    box-shadow: 0 0 4px 4px rgb(3, 70, 255);
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    }
+
+    .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+    .photo_container {
+    position: relative;
+
+    }
+
+    .photo_container img:hover  {
+    opacity: 0.3;
+    }
+
+    .photo_container:hover .middle {
+    opacity: 1;
+    }
+
+    .text {
+    background-color: #62c2ee;
+    color: rgb(3, 3, 3);
+    font-size: 16px;
+    /* padding: auto; */
+    }
+/* image garllery end*/
+
+/* story board part */
+.storyboard_video {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}

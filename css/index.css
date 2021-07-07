@@ -1,0 +1,41 @@
+
+body  {
+    
+    background-image: url("../images/image.png"), url("../images/bg_pattern.jpg") ;
+    background-position: top, center;
+    background-size: 100%, 100%;
+    
+    background-repeat: no-repeat;
+
+    }
+
+h1 {
+    margin: 370px 0px 0px 0px;
+    color: rgba(0, 153, 255, 0.952);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60pt;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30pt;
+}
+
+.button_return {
+    width: 140px;
+    height: 70px;
+    position:absolute;
+    left: 47%;
+    transition-duration: 0.4s;
+    background: rgb(250, 250, 250);
+    font-size: 25px;
+    border-radius: 12px;
+    border: 5px solid rgba(0, 118, 253, 0.719)
+}
+
+.button_return:hover {
+    background-color: rgba(0, 118, 253, 0.719);
+    color: hsla(0, 0%, 100%, 0.89);
+}

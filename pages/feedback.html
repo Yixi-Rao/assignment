@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <title> Feedback </title>
+</head>
+
+<body>
+    <h1 class="h1_firstHeading"> Feedback Form </h1>
+    <!-- this is the feedback form -->
+    <form enctype="text/plain" action="mailto:u6826541@anu.edu.au">
+
+        Your name
+        <br />
+        <input type="text" name="name" size="10" maxlength="50">
+        <hr />
+        Your email address
+        <br />
+        <input type="text" name="email" size="40" maxlength="50">
+        <hr />
+        waht do you think about this website?
+        <br />
+        
+        <label> <input type="radio" name="evaluation" value="very good"> very good </label>
+        <label> <input type="radio" name="evaluation" value="good"> good </label>
+        <label> <input type="radio" name="evaluation" value="okay"> okay </label>
+        <label> <input type="radio" name="evaluation" value="bad"> bad </label>
+        <label> <input type="radio" name="evaluation" value="very bad">  very bad </label>
+        <hr />
+        Please fill in your feedback and suggestion
+        <br />
+        <textarea name="suggestion" wrap="soft" maxlength="250"></textarea>
+
+        <br />
+        <hr />
+        Submit:
+        <input type="submit" value="Send it">
+        or
+        <input type="reset" value="Clear">
+
+    </form>
+    <!-- this is the return button -->
+    <button class="button_return" onclick="window.location.href = 'sitemap.html'"> site map </button>
+</body>
+
+</html>
